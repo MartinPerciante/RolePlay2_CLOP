@@ -15,6 +15,7 @@ namespace RoleplayGame
 
         public Staff Staff { get; set; }
 
+
         public int AttackValue
         {
             get
