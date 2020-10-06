@@ -11,11 +11,11 @@ namespace RoleplayGame
 
         public string Name { get; set; }
 
-        public Axe Axe { get; set; }
+        public IAttackItem Axe { get; set; }
 
-        public Shield Shield { get; set; }
+        public IDefenseItem Shield { get; set; }
 
-        public Helmet Helmet { get; set; }
+        public IDefenseItem Helmet { get; set; }
 
         public int AttackValue
         {
@@ -55,7 +55,10 @@ namespace RoleplayGame
 
         public void Cure()
         {
-            this.Health = 100;
+            if (this.Health != 0)
+            {
+                this.Health = 100;
+            }
         }
     }
 }

@@ -11,9 +11,9 @@ namespace RoleplayGame
 
         public string Name { get; set; }
 
-        public SpellsBook SpellsBook { get; set; }
+        public IMagic SpellsBook { get; set; }
 
-        public Staff Staff { get; set; }
+        public IMagic Staff { get; set; }
 
 
         public int AttackValue
@@ -54,7 +54,10 @@ namespace RoleplayGame
 
         public void Cure()
         {
-            this.Health = 100;
+            if (this.Health != 0)
+            {
+                this.Health = 100;
+            }
         }
     }
 }

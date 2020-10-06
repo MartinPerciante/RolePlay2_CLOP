@@ -1,7 +1,8 @@
 namespace RoleplayGame
 {
-    public interface IMagic : IAttackItem, IDefenseItem
+    public interface IMagic
     {
-        
+        int AttackValue {get;}
+        int DefenseValue {get;}
     }
 }
