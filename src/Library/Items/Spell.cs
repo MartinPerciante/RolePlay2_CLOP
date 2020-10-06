@@ -1,21 +1,20 @@
 namespace RoleplayGame
 {
-    public class Spell
+    public class Spell : ISpell
     {
-        public int AttackValue
+
+        public Spell(string name, int attack, int defense)
         {
-            get
-            {
-                return 70;
-            }
+            this.Name = name;
+            this.AttackValue = attack;
+            this.DefenseValue = defense;
         }
 
-        public int DefenseValue
-        {
-            get
-            {
-                return 70;
-            }
-        }
+        public string Name { get; set; }
+
+       
+        public int AttackValue { get; }
+
+        public int DefenseValue { get; }
     }
 }
