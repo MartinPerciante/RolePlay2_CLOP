@@ -12,7 +12,6 @@ namespace RoleplayGame
 
         public string Name { get; set; }
 
-       
         public int AttackValue { get; }
 
         public int DefenseValue { get; }

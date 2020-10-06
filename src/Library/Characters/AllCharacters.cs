@@ -3,7 +3,7 @@ namespace RoleplayGame
 {
     public class AllCharacters
     {
-        private List <ICharacter> characters;
+        public List<ICharacter> characters = new List<ICharacter>();
 
         public void AddCharacter(ICharacter character)
         {

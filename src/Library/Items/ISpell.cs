@@ -1,12 +1,7 @@
 namespace RoleplayGame
 {
-    public interface ISpell
+    public interface ISpell : IMagic
     {
-        //Spell(string name, int attack, int defense);
-
         string Name { get; set; }
-        int AttackValue {get;}
-
-        int DefenseValue {get;}
     }
 }
